@@ -1,0 +1,79 @@
+flex-center, .pad, #sampler-container, #construction-container, #main-container, #title, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+red-border, .pad, #sampler-header, #sampler-container {
+  border: 1px solid #e33030;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  color: #e33030;
+  text-decoration: none;
+  font-size: 25px;
+}
+a:hover {
+  color: #3089e3;
+}
+
+#title {
+  flex-direction: column;
+  font-size: 50px;
+  color: #e33030;
+}
+
+#main-container {
+  color: #e33030;
+  font-size: 25px;
+}
+#main-container div {
+  margin: 10px;
+}
+
+#construction-container {
+  flex-direction: column;
+  color: #e33030;
+  font-size: 50px;
+}
+#construction-container div {
+  margin: 10px;
+}
+
+#sampler-container {
+  flex-direction: column;
+  color: #e33030;
+  padding: 10px;
+}
+
+#sampler-header {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#pad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+}
+
+.pad {
+  box-sizing: border-box;
+  width: 100px;
+  height: 80px;
+  margin: 5px;
+  padding: 10px;
+  color: #e33030;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

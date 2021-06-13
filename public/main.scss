@@ -1,0 +1,92 @@
+$red: #e33030;
+$blue: #3089e3;
+$large-font: 50px;
+$medium-font: 30px;
+$small-font: 25px;
+
+flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+red-border {
+  border: 1px solid $red;
+}
+
+body {
+  @extend flex-center;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  font-size: $small-font;
+  &:hover {
+    color: $blue;
+  }
+}
+
+#title {
+  @extend flex-center;
+  flex-direction: column;
+  font-size: $large-font;
+  color: $red;
+}
+
+#main-container {
+  @extend flex-center;
+  color: $red;
+  font-size: $small-font;
+  div {
+    margin: 10px;
+  }
+}
+
+#construction-container {
+  @extend flex-center;
+  flex-direction: column;
+  color: $red;
+  font-size: $large-font;
+  div {
+    margin: 10px;
+  }
+}
+
+#sampler-container {
+  @extend flex-center;
+  @extend red-border;
+  flex-direction: column;
+  color: $red;
+  padding: 10px;
+}
+
+#sampler-header {
+  @extend red-border;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#pad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+}
+
+.pad {
+  @extend flex-center;
+  @extend red-border;
+  box-sizing: border-box;
+  width: 100px;
+  height: 80px;
+  margin: 5px;
+  padding: 10px;
+  color: $red;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}

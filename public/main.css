@@ -1,16 +1,17 @@
-flex-center, .pad, #sampler-container, #construction-container, #main-container, #title, body {
+flex-center, #video-controls-div, #video-container, .pad, #sampler-container, #construction-container, #main-container, #title, body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-red-border, .pad, #sampler-header, #sampler-container {
+red-border, .video-button, video, .pad, #sampler-header, #sampler-container {
   border: 1px solid #e33030;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 a {
@@ -49,11 +50,13 @@ a:hover {
   flex-direction: column;
   color: #e33030;
   padding: 10px;
+  box-shadow: 2px 2px #e33030;
 }
 
 #sampler-header {
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 1px 1px #e33030;
 }
 
 #pad-grid {
@@ -68,12 +71,26 @@ a:hover {
   margin: 5px;
   padding: 10px;
   color: #e33030;
+  box-shadow: 1px 1px #e33030;
 }
 
 .back-button {
   position: absolute;
   top: 10px;
   left: 20px;
+}
+
+#video-container {
+  flex-direction: column;
+}
+
+.video-button {
+  background-color: #e33030;
+  color: white;
+  width: 40px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

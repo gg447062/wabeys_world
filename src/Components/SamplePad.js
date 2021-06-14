@@ -9,6 +9,7 @@ export default class SamplePad extends React.Component {
   playAudio() {
     const id = this.props.id;
     const audioSource = document.getElementById(`pad-${id}`);
+    audioSource.currentTime = 0;
     audioSource.play();
   }
 

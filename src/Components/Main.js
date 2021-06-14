@@ -16,7 +16,7 @@ export default class Main extends React.Component {
           <Link to="/sampler">SAMPLE BOARD</Link>
         </div>
         <div>
-          <Link to="/construction">VIDEO ROOM</Link>
+          <Link to="/watch">VIDEO ROOM</Link>
         </div>
         <div>
           <Link to="/construction">READING ROOM</Link>
